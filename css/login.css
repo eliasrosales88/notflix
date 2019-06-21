@@ -1,0 +1,43 @@
+.login-wrapper{
+    display: flex;
+    flex: 1;
+    background-color: red;
+    
+}
+
+.login-wrapper #login{
+    background-color: mediumpurple;
+    flex: 3;
+    align-self: center;
+    
+}
+
+.login-wrapper #login .form-login{
+    float: right;
+    background-color: blue;
+    padding: 5px;
+}
+
+
+
+
+.login-wrapper #login .form-login form{
+    display: flex;
+    flex-direction: column;
+    background-color: yellowgreen;
+    padding: 20px;
+    flex: 1
+    
+}
+
+.login-wrapper #movies{
+    background-color: green;
+    color: #ffffff;
+    flex: 1;
+    overflow: hidden;
+    max-height: 100vh; 
+}
+
+.login-wrapper #movies img{
+    max-width: 100%;
+}
