@@ -1,3 +1,4 @@
+
 /* 
 - Recuerda definir los estilos de los elementos principales como las html tags.
     * label
@@ -33,7 +34,7 @@ body{
     max-width: 1199px;;
     flex-direction: column;
     background-color: blue;
-    /* flex: 1 */
+    flex: 1
 }
 
 label{
