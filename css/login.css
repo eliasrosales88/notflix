@@ -1,21 +1,39 @@
+.login-container{
+    display: flex;
+    /* background-color: red; */
+    margin: 0 4%;
+    flex-direction: column;
+    height: 70vh;
+    justify-content: center
+}
+
 .login-wrapper{
     display: flex;
     flex: 1;
-    background-color: var(--bg-primary);
-    
+    background: linear-gradient(to bottom right,#405ad1, #281386);
+    box-shadow: 1px 1px 5px #333333;
+    border-radius: 5px;
+    flex-direction: row-reverse
 }
-
 .login-wrapper #login{
-    background-color: mediumpurple;
-    flex: 3;
+    background-color: rgba(12, 4, 78, 0.5);
+    border-top: 1px solid #c8c8c8;
+    border-bottom: 1px solid #c8c8c8;
+    flex: 1;
     align-self: center;
+    color: #ffffff;
+    /* filter: grayscale(100%); */
+    /* height: 100%; */
+    /* align-content: center */
+
     
 }
 
 .login-wrapper #login .form-login{
-    float: right;
-    background-color: blue;
+    /* float: left; */
     padding: 5px;
+    box-shadow: 60px 0 -30px #333333;
+    display: flex;
 }
 
 
@@ -24,32 +42,45 @@
 .login-wrapper #login .form-login form{
     display: flex;
     flex-direction: column;
-    background-color: yellowgreen;
+    background-color: transparent;
     padding: 20px;
     flex: 1
     
 }
 
 .login-wrapper #movies{
-    background-color: green;
+    background-color: #333333;
     color: #ffffff;
-    flex: 1;
+    flex: 3;
     overflow: hidden;
     max-height: 100%;
-    /* height: 100%; */
-    /* z-index: 0; */
     position: relative;
+    box-shadow: inset 1px 0px 5px #333333;
+    filter: saturate(red)
 }
 
-.login-wrapper #movies img{
+
+.login-wrapper #movies video{
     max-width: 100%;
-    position: relative;
+    height: 100%;
+    object-fit: cover;
+}
+
+.login-wrapper #movies .movies-titles{
+    position: absolute;
+    bottom: 0;
+    background: linear-gradient(to right, rgba(128, 0, 128, 0.356), blue 85%);
+    width: 100%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
 }
 
 .move-down-1, .move-down-2{
     position: absolute;
     animation-direction: normal;
     animation-timing-function: linear;
+    /* margin-bottom: 7px; */
 }
 
 .move-down-1{
