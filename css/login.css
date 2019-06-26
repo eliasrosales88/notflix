@@ -1,10 +1,10 @@
 .login-container{
     display: flex;
     /* background-color: red; */
-    margin: 0 4%;
+    margin: 0 8%;
     flex-direction: column;
     height: 70vh;
-    justify-content: center
+    justify-content: center;
 }
 
 .login-wrapper{
@@ -13,7 +13,7 @@
     background: linear-gradient(to bottom right,#405ad1, #281386);
     box-shadow: 1px 1px 5px #333333;
     border-radius: 5px;
-    flex-direction: row-reverse
+    flex-direction: row-reverse;
 }
 .login-wrapper #login{
     background-color: rgba(12, 4, 78, 0.5);
@@ -51,12 +51,12 @@
 .login-wrapper #movies{
     background-color: #333333;
     color: #ffffff;
-    flex: 3;
+    flex: 2;
     overflow: hidden;
     max-height: 100%;
     position: relative;
-    box-shadow: inset 1px 0px 5px #333333;
-    filter: saturate(red)
+    width: 100%;
+    /* max-width: 100%; */
 }
 
 
@@ -64,34 +64,54 @@
     max-width: 100%;
     height: 100%;
     object-fit: cover;
+
 }
 
 .login-wrapper #movies .movies-titles{
     position: absolute;
-    bottom: 0;
-    background: linear-gradient(to right, rgba(128, 0, 128, 0.356), blue 85%);
-    width: 100%;
-    height: 20%;
+    left: -10%;
+    top: 35%;
+    background: linear-gradient(to left, rgba(128, 0, 128, 0.5), blue 85%);
+    width: 35vw;
+    height: 35%;
     display: flex;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
-.move-down-1, .move-down-2{
+
+
+.show-title-1{
     position: absolute;
-    animation-direction: normal;
-    animation-timing-function: linear;
-    /* margin-bottom: 7px; */
+    left: -50%;
+    animation-name: show-title-1;
+    animation-duration: 20s;
+    animation-direction: normal; 
+    animation-timing-function: cubic-bezier(0, 0.7, 0.36, 1.07);
+    animation-iteration-count: 1;
+    width: 45%;
 }
 
-.move-down-1{
-    animation-name: move-down-1;
-    animation-duration: 50s;
-    animation-iteration-count: infinite;
+.show-title-2{
+    width: 45%;
+    position: absolute;
+    left: -100%;
+    animation-name: show-title-2;
+    animation-delay: 10s;
+    animation-duration: 35s;
+    animation-direction: normal; 
+    animation-timing-function: cubic-bezier(0, 0.7, 0.36, 1.07);
+    animation-iteration-count: 1;
 }
-.move-down-2{
-    animation-name: move-down-2;
-    animation-iteration-count: infinite;
-    animation-duration: 50s;
+.show-title-3{
+    width: 45%;
+    position: absolute;
+    left: -100%;
+    animation-name: show-title-2;
+    animation-delay: 30s; 
+    animation-duration: 38s;
+    animation-direction: normal; 
+    animation-timing-function: cubic-bezier(0, 0.7, 0.36, 1.07);
+    animation-iteration-count: 1;
 }
 
 

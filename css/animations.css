@@ -1,8 +1,11 @@
-@keyframes move-down-1 {
-    0%   {top: -200%;}
-    100% {top: 0%;}
+@keyframes show-title-1 {
+    0%   {left: -50%;}
+    50%  {left: 38%}
+    100% {left: -50%;}
 }
-@keyframes move-down-2 {
-    0%   {top: 0%;}
-    100% {top: 200%;}
+
+@keyframes show-title-2 {
+    0%   {left: -100%;}
+    50%  {left: 35%}
+    100% {left: -100%;}
 }
