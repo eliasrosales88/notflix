@@ -10,7 +10,11 @@
 .login-wrapper{
     display: flex;
     flex: 1;
-    background: linear-gradient(to bottom right,#405ad1, #281386);
+    background: linear-gradient(to bottom right,#36a4e3, #002855);
+    background-image: url("../images/bg-pattern-triangle.jpg");
+    /* background-position: right; */
+    background-size: cover;
+    background-repeat: no-repeat;
     box-shadow: 1px 1px 5px #333333;
     border-radius: 5px;
     flex-direction: row-reverse;
@@ -19,7 +23,6 @@
     background-color: rgba(12, 4, 78, 0.5);
     border-top: 1px solid #c8c8c8;
     border-bottom: 1px solid #c8c8c8;
-    flex: 1;
     align-self: center;
     color: #ffffff;
     /* filter: grayscale(100%); */
@@ -51,12 +54,11 @@
 .login-wrapper #movies{
     background-color: #333333;
     color: #ffffff;
-    flex: 2;
     overflow: hidden;
     max-height: 100%;
     position: relative;
     width: 100%;
-    /* max-width: 100%; */
+    /* max-width: 848px; */
 }
 
 
@@ -70,8 +72,8 @@
 .login-wrapper #movies .movies-titles{
     position: absolute;
     left: -10%;
-    top: 35%;
-    background: linear-gradient(to left, rgba(128, 0, 128, 0.5), blue 85%);
+    top: 33%;
+    background: linear-gradient(to left, rgba(54, 164, 226, 0.5), #318eda 90%);
     width: 35vw;
     height: 35%;
     display: flex;
