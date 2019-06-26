@@ -7,6 +7,8 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/animations.css">
+    
+    <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/login.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -18,7 +20,7 @@
 
         <div class="login-container">
             <div class="login-wrapper">
-                <section id="login">
+                <section id="login" class="flex-2-m flex-2-l flex-1-xl">
                     <article class="form-login">
                         <form action="home.html">
                             <label for="email">Email</label>
@@ -28,14 +30,17 @@
                             <input type="password" name="password" id="password" required>
 
                             <button type="submit">Login</button>
-                            <a href="#">Recuperar contraseña</a>
+                            <a class="text-center" href="#">Recuperar contraseña</a>
                         </form>
                     </article>
 
                 </section>
-                <div id="movies">
+                <div id="movies" class="flex-2-m flex-2-l flex-1-xl d-none-hxs d-none-xs ">
                     <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="0">
+                    <source src="./videos/login/login-main.webm" type="video/webm" />
+                    <source src="./videos/login/login-main.ogg" type="video/ogg" />
                     <source src="./videos/login/login-main.mp4" type="video/mp4" />
+                    ¡Lo sentimos! Tu navegador no soporta nuestros vídeos...
                     </video>
                     <div class="movies-titles  ">
                         <div class="show-title-1 ">
