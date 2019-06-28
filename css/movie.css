@@ -32,7 +32,7 @@
     border-radius: 5px;
     flex-direction: row;
     max-width: 60%;
-    min-height: 300px;
+    min-height: 500px;
     pointer-events: auto;
     margin:  20px;
     padding: 20px;
@@ -53,6 +53,16 @@
 } */
 .movie-wrapper #movies video{
     max-width: 100%;
+}
+
+.movie-wrapper #movies a.movie-desc::after{
+    content: ' +'
+}
+.movie-wrapper #movies a.movie-desc:focus::after{
+    content: ' -'
+}
+.movie-wrapper #movies .movie-desc:focus ~ *{
+    display: block;
 }
 
 
