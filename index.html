@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    <div class="container">
+    <div class="container flex-column">
 
-        <div class="login-container">
+        <div class="login-container d-flex flex-column flex-jc-center flex-ai-center">
             <div class="login-wrapper">
-                <section id="login" class="flex-2-m flex-2-l flex-1-xl">
+                <section id="login" class="flex-2-m flex-2-l flex-2-xl">
                     <article class="form-login">
                         <form action="home.html">
                             <label for="email">Email</label>
@@ -36,7 +36,7 @@
 
                 </section>
                 <div id="movies" class="flex-2-m flex-2-l flex-1-xl d-none-hxs d-none-xs ">
-                    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" volume="0">
+                    <video autoplay="autoplay" loop="loop" id="video_background" preload="auto" muted>
                     <source src="./videos/login/login-main.webm" type="video/webm" />
                     <source src="./videos/login/login-main.ogg" type="video/ogg" />
                     <source src="./videos/login/login-main.mp4" type="video/mp4" />
@@ -56,12 +56,12 @@
                 </div>
             </div>
         </div>
+        <footer>
+            <div class="social">
+                Redes Sociales
+            </div>
+        </footer>
     </div>
-    <footer>
-        <div class="social">
-            Redes Sociales
-        </div>
-    </footer>
 </body>
 
 </html>

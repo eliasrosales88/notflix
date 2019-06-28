@@ -7,36 +7,65 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/animations.css">
-    
+
     <link rel="stylesheet" href="css/media-queries.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/movie.css">
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/movie.css">
     <title>Notflix</title>
 </head>
 
 <body>
-    <div class="container">
+    <div class="container flex-column">
+        <header>
+            <div class="logo flex-1"><a href="#">LOGO</a></div>
+            <nav class="main-nav flex-11">
+                <ul>
+                    <li><a href="#">Button 1</a></li>
+                    <li><a href="#">Button 2</a></li>
+                    <li><a href="#">Button 3</a></li>
+                    <li><a href="#">Button 4</a></li>
+                </ul>
+            </nav>
 
-        <div class="movie-container">
-            <div class="movie-wrapper">
-                
-                <div id="movies" class="flex-1-l flex-1-xl">
+        </header>
+        <div class="movie-container d-flex flex-column flex-jc-center flex-ai-center">
+            <section class="movie-wrapper">
+                <article id="movies" class="flex-1-l flex-1-xl">
+                    <h1>Título de Película</h1>
                     <video id="movie-1" preload="auto" controls volume="50">
-                    <source src="./videos/login/login-main.webm" type="video/webm" />
-                    <source src="./videos/login/login-main.ogg" type="video/ogg" />
-                    <source src="./videos/login/login-main.mp4" type="video/mp4" />
-                    ¡Lo sentimos! Tu navegador no soporta nuestros vídeos...
+                        <source src="./videos/login/login-main.webm" type="video/webm" />
+                        <source src="./videos/login/login-main.ogg" type="video/ogg" />
+                        <source src="./videos/login/login-main.mp4" type="video/mp4" />
+                        ¡Lo sentimos! Tu navegador no soporta nuestros vídeos...
                     </video>
-                </div>
+                    <section>
+                        <!-- <div class="d-flex">
+                            <article class="flex-1 d-inline-flex">
+                                <h3>Género:</h3>
+                                    <span class="tag">Acción</span>
+                                    <span class="tag">Aventura</span>
+                            </article>
+                            <article class="flex-1 d-inline-flex">
+                                <h3>Actores:</h3>
+                                <span class="tag">Penélope Cruz</span>
+                                <span class="tag">Antonio Banderas</span>
+                            </article>
+                        </div> -->
+                        <article class="d-flex flex-column">
+                            <h2>Sinopsis</h2>
+                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Enim aspernatur ex, eius esse quidem, tempora asperiores delectus cumque magnam non, distinctio est voluptate officiis culpa! Quisquam aliquam ipsam architecto ullam?</p>
+                        </article>
+                    </section>
+                </article>
+            </section>
+        </div>
+        <footer>
+            <div class="social">
+                Redes Sociales
             </div>
-        </div>
+        </footer>
     </div>
-    <footer>
-        <div class="social">
-            Redes Sociales
-        </div>
-    </footer>
 </body>
 
 </html>

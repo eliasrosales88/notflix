@@ -1,35 +1,41 @@
 
 /* "Breaking" CSS with pointer events in container and movie-container */
-.container{
+.movie-container{
     pointer-events: none;
+    /* display: block; */
 }
-.container:hover {
+.movie-container:hover {
     background-color: #131313;
     transition: background-color 0.5s;
 }
 
-.container:not(:hover) {
+.movie-container:not(:hover) {
     transition: background-color 2s;
 }
 
-.movie-container{
-    display: flex;
-    margin: 0 8%;
-    flex-direction: column;
-    /* height: auto; */
-    pointer-events: auto;
+.movie-container {
+    height: 100%;
+    min-height: 500px;
+    pointer-events: none;
     cursor: pointer;
+    /* width: 84%; */
+    /* background-color: lightblue; */
 }
 /* --------------------------------------------------------------------- */
 
 
 .movie-wrapper{
     display: flex;
-    flex: 1;
+    /* flex: 1; */
     background: linear-gradient(to bottom right,#3333335b, #000000);
     box-shadow: 30px 10px 100px #333333;
     border-radius: 5px;
     flex-direction: row;
+    max-width: 60%;
+    min-height: 300px;
+    pointer-events: auto;
+    margin:  20px;
+    padding: 20px;
     /* height: 100% */
 }
 .movie-wrapper #movies{
@@ -39,7 +45,20 @@
 
 
 
+/* .movie-wrapper #movies h1,
+.movie-wrapper #movies h2,
+.movie-wrapper #movies h3,
+.movie-wrapper #movies p{
+    padding: 5px 10px;
+} */
 .movie-wrapper #movies video{
     max-width: 100%;
 }
 
+
+.tag{
+    background-color: lightblue;
+    padding: 3px;
+    margin: 2px;
+    align-items: center
+}
