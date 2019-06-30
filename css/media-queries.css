@@ -220,6 +220,7 @@
 } 
 /* S - Small */
 @media all and (max-width: 768px) {
+    
 
     .d-none-s{
         display: none;
@@ -333,10 +334,10 @@
 
 
 }
-@media all and (max-height: 620px) {
+@media all and (max-height: 768px) {
 
-    .min-hxs-700{
-        min-height: 700px
+    .min-hxs-850{
+        min-height: 850px
     }
 
 
