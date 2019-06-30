@@ -1,0 +1,123 @@
+body{
+    height: 100%;
+    background-color: #131313;
+}
+.container{
+    color: #ffffff;
+}
+
+
+.news{
+    flex: 2;
+    background-color: red;
+    min-height: 30vh;
+}
+
+
+
+
+/* Related Content */
+
+
+
+
+.section-grid{
+    background-color: #131313;
+}
+
+.section-grid .poster {
+    background-color: aquamarine;
+    background-image: url('../images/poster1.jpg');
+    background-size: cover;
+    margin: 10px;
+    width: 150px;
+    min-width: 100px;
+    max-width: 250px;
+    height: 200px;
+    color: #ffffff; 
+    /* min-height: 120px; */
+    position: relative;
+}
+
+
+.section-grid article:hover {
+    flex: 2;
+    transition: flex 0.5s;
+}
+.section-grid article:not(:hover) {
+    flex: 1;
+    transition: flex 0.5s;
+}
+.section-grid article:hover .movie-tooltip{
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: #333333d7;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer
+
+}
+.section-grid article:hover .movie-tooltip .tooltip-top{
+    background-color: #131313;
+    padding: 2px;
+}
+.section-grid article:hover .movie-tooltip h1{
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.section-grid .movie-tooltip p {
+    width: 95%;
+
+}
+
+.section-grid .movie-tooltip p:nth-child(4) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+
+}
+.section-grid article h1 {
+    font-size: 0.9rem;
+}
+
+.movies-grid article img {
+    max-width: 100%;
+}
+
+.movies-grid .movie-wrapper-thumb {
+    display: flex;
+    /* flex: 1; */
+    background: linear-gradient(to bottom right, #3333335b, #000000);
+    /* box-shadow: 30px 10px 100px #333333; */
+    border-radius: 5px;
+    flex-direction: row;
+    /* max-width: 60%; */
+    /* min-height: 600px; */
+    pointer-events: auto;
+    /* margin: 20px; */
+    padding: 20px;
+    /* overflow: hidden; */
+    /* height: 100%; */
+}
+
+
+.movies-grid .movie-wrapper-thumb .movies-thumb {
+    align-self: center;
+    color: #ffffff;
+    height: 100%;
+}
+
+
+.movies-grid .movie-wrapper-thumb .movies-thumb h1::after {
+    content: '  Año 2017 | Calificación 4/5';
+    font-size: 0.5em;
+    display: block
+}
+
+.movies-grid .movie-wrapper-thumb .movies-thumb video {
+    max-width: 100%;
+}
