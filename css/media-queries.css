@@ -267,7 +267,9 @@
 
 /* XS - Extra Small */
 @media all and (max-width: 575px) {
-
+    .min-h-600-xs{
+        min-height: 600px
+    }
     .d-none-xs{
         display: none;
     }
@@ -323,6 +325,14 @@
     }
     .d-visible-hxs{
         display: block;
+    }
+
+
+}
+@media all and (max-height: 620px) {
+
+    .min-hxs-700{
+        min-height: 700px
     }
 
 

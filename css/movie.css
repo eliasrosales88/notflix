@@ -15,7 +15,7 @@
 
 .movie-container {
     height: 100%;
-    min-height: 600px;
+    /* min-height: 600px; */
     pointer-events: none;
     cursor: pointer;
 }
@@ -29,11 +29,11 @@
     border-radius: 5px;
     flex-direction: row;
     max-width: 60%;
-    min-height: 300px;
+    /* min-height: 300px; */
     pointer-events: auto;
     margin:  20px;
     padding: 20px;
-    overflow: hidden;
+    /* overflow: hidden; */
 }
 .movie-wrapper #movies{
     align-self: center;
@@ -52,28 +52,32 @@
 }
 
 
-.movie-wrapper #movies a.movie-desc-button::after{
+.movie-wrapper .movie-content{
+    overflow: hidden;
+}
+
+.movie-content a.movie-desc-button::after{
     content: ' -'
 }
-.movie-wrapper #movies a.movie-desc-button:focus::after{
+.movie-content a.movie-desc-button:focus::after{
     content: ' +'
 }
 
 
-.movie-wrapper #movies .movie-desc,
-.movie-wrapper #movies .movie-desc-button:focus ~ .movie-desc {
+.movie-content .movie-desc,
+.movie-content .movie-desc-button:focus ~ .movie-desc {
     display: block;
     height: 200px;
     overflow: hidden;
     overflow-y: scroll;
     padding: 10px 10px 30px 10px;
 }
-.movie-wrapper #movies .movie-desc-button:focus ~ .movie-desc {
+.movie-content .movie-desc-button:focus ~ .movie-desc {
     display: none;
 }
 
 
-.movie-wrapper #movies .movie-desc .movie-trailer{
+.movie-content .movie-desc .movie-trailer{
     display: block;
     max-width: 60%;
 }
@@ -87,8 +91,8 @@
 .movies-grid{
     background-color: red;
     width: 100%;
-    min-height: 150px;
-    padding-bottom: 50px;
+    /* min-height: 150px;
+    padding-bottom: 50px; */
 }
 .movies-grid h1{
     font-size: 1.3rem;
