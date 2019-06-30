@@ -101,6 +101,10 @@
     transform: translate(-50%, -50%);
 }
 
+.movie-content .movie-desc h3 {
+    margin: 2px;
+}
+
 .movie-content input[id='description']:not(:checked)~.movie-desc {
     display: block;
     height: 200px;
@@ -165,7 +169,7 @@
     position: absolute;
     top: 0;
     cursor: pointer
-    
+
 }
 
 .movies-grid .movie-tooltip p {
@@ -178,7 +182,7 @@
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
-  
+
 }
 .movies-grid article h1 {
     font-size: 0.9rem;

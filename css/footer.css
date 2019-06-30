@@ -16,3 +16,6 @@ footer .social{
     align-self: center
 }
 
+footer .social .social-icon{
+    margin: 0 7px;
+}
