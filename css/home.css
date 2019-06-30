@@ -8,9 +8,16 @@ body{
 
 
 .news{
-    flex: 2;
-    background-color: red;
+    flex: 1;
+    background-color: #4dc3d3;
     min-height: 30vh;
+    max-width: 100vw;
+}
+.news img{
+    object-fit: cover;
+    max-width: 100%;
+    width: 100%;    
+
 }
 
 
@@ -25,6 +32,7 @@ body{
     background-color: #131313;
 }
 
+
 .section-grid .poster {
     background-color: aquamarine;
     background-image: url('../images/poster1.jpg');
@@ -37,6 +45,36 @@ body{
     color: #ffffff; 
     /* min-height: 120px; */
     position: relative;
+}
+.section-grid .poster.poster1 {
+    background-image: url('../images/poster1.jpg')
+}
+.section-grid .poster.poster2 {
+    background-image: url('../images/poster2.jpg')
+}
+.section-grid .poster.poster3 {
+    background-image: url('../images/poster3.jpg')
+}
+.section-grid .poster.poster4 {
+    background-image: url('../images/poster4.jpg')
+}
+.section-grid .poster.poster5 {
+    background-image: url('../images/poster5.jpg')
+}
+.section-grid .poster.poster6 {
+    background-image: url('../images/poster6.jpg')
+}
+.section-grid .poster.poster7 {
+    background-image: url('../images/poster7.jpg')
+}
+.section-grid .poster.poster8 {
+    background-image: url('../images/poster8.jpg')
+}
+.section-grid .poster.poster9 {
+    background-image: url('../images/poster9.jpg')
+}
+.section-grid .poster.poster10 {
+    background-image: url('../images/poster10.jpg')
 }
 
 
