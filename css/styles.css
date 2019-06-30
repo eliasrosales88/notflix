@@ -22,6 +22,7 @@ body {
     margin: 0;
     height: 100%;
     font-family: ubuntu-r, Arial, Helvetica, sans-serif;
+    /* font-size: 16px; */
 }
 
 h1,
@@ -144,3 +145,23 @@ header {
     border-radius: 2px;
     text-shadow: 1px 1px 1px #000000;
 }
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: blue; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }

@@ -127,25 +127,59 @@
 
 /* Related Content */
 
+
+
 .movies-grid {
-    background-color: red;
     width: 100%;
-    /* min-height: 150px;
-    padding-bottom: 50px; */
+    padding-bottom: 20px;
+    background-color: transparent;
+    transition: background-color 2s;
 }
 
+.movie-container:hover ~ .movies-grid {
+    background-color: #131313;
+    color: #ffffff;
+    transition: background-color 0.5s;
+
+}
 .movies-grid h1 {
     font-size: 1.3rem;
 }
 
 .movies-grid article {
-    height: 100px;
     background-color: aquamarine;
     margin: 2px;
     color: #000000;
-    min-height: 150px;
+    /* min-height: 120px; */
+    position: relative;
 }
 
+
+.movies-grid article:hover .movie-tooltip{
+    display: block;
+    overflow: hidden;
+    overflow-y: scroll;
+    background-color: rgba(127, 255, 212, 0.2);
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    cursor: pointer
+    
+}
+
+.movies-grid .movie-tooltip p {
+    width: 95%;
+    /* font-size: 0.7rem; */
+
+}
+
+.movies-grid .movie-tooltip p:nth-child(3) {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  
+}
 .movies-grid article h1 {
     font-size: 0.9rem;
 }
