@@ -310,7 +310,9 @@
     .flex-12-xs{
         flex: 12;
     }
-
+    .flex-column-xs {
+        flex-direction: column
+    }
 
 }
 
