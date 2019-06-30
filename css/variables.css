@@ -1,5 +1,9 @@
 :root{
     /* --primary:  */
     /* --secondary:  */
-    --bg-primary: #ffffff;
+    --primary: #4dc3d3;
+    --secondary: #131313;
+    --terciary: #333333;
+    --black: #000000;
+    --white: #ffffff;
 }

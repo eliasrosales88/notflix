@@ -43,12 +43,13 @@ input[type='text'],
 input[type='search'] {
     margin: 3px;
     border-radius: 5px;
-    padding: 5px;
-    border: 1px solid lightgray;
+    padding: 10px;
+    border: 1px solid var(--primary);
     box-shadow: inset 0 0 1px black;
     -moz-box-shadow: inset 0 0 1px black;
     -webkit-box-shadow: inset 0 0 1px black;
     width: 100%;
+    max-width: 100%;
 }
 
 input[type='search'] {
@@ -57,15 +58,16 @@ input[type='search'] {
 }
 button {
     margin: 5px 0;
-    padding: 7px;
-    background-color: lightblue;
-    border: 1px solid lightgray;
+    padding: 12px;
+    background-color: var(--primary);
+    border: 1px solid var(--primary);
     border-radius: 5px;
+    color: var(--white);
 }
 
 a {
     text-decoration: none;
-    color: #ffffff;
+    color: var(--white);
 }
 
 .container {
@@ -79,7 +81,7 @@ a {
 
 header {
     display: flex;
-    background-color: #333333;
+    background-color: var(--terciary);
     z-index: 100;
 }
 
@@ -95,7 +97,7 @@ header {
 }
 
 .main-nav {
-    color: #ffffff;
+    color: var(--white);
     display: inline-flex;
     flex-direction: column;
     align-self: flex-end;
@@ -132,7 +134,7 @@ header {
     position: absolute;
     top: 100px ;
     right: 0;
-    background-color: #333333;
+    background-color: var(--terciary);
     border-radius: 2px;
     padding: 10px;
     
@@ -158,9 +160,9 @@ header {
     background-color: #4dc3d3; 
     padding: 5px;
     margin: 2px;
-    box-shadow: 2px 2px 2px #000000;
+    box-shadow: 2px 2px 2px var(--black);
     border-radius: 2px;
-    text-shadow: 1px 1px 1px #000000;
+    text-shadow: 1px 1px 1px var(--black);
 }
 
 /* width */
@@ -175,7 +177,7 @@ header {
    
   /* Handle */
   ::-webkit-scrollbar-thumb {
-    background: #333333; 
+    background: var(--terciary); 
   }
   
   /* Handle on hover */
