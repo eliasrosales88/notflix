@@ -3,7 +3,8 @@ footer{
     bottom: 0; */
     /* height: 10%; */
     min-height: 60px;
-    width: 100%;
+    /* width: 100%; */
+    flex-direction: column;
     background-color: #333333;
     color: #ffffff;
     display: flex;
