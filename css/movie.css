@@ -1,9 +1,9 @@
-
 /* "Breaking" CSS with pointer events in container and movie-container */
-.movie-container{
+.movie-container {
     pointer-events: none;
     /* display: block; */
 }
+
 .movie-container:hover {
     background-color: #131313;
     transition: background-color 0.5s;
@@ -19,65 +19,104 @@
     pointer-events: none;
     cursor: pointer;
 }
+
 /* --------------------------------------------------------------------- */
 
 
-.movie-wrapper{
+.movie-wrapper {
     display: flex;
-    background: linear-gradient(to bottom right,#3333335b, #000000);
+    background: linear-gradient(to bottom right, #3333335b, #000000);
     box-shadow: 30px 10px 100px #333333;
     border-radius: 5px;
     flex-direction: row;
     max-width: 60%;
     /* min-height: 300px; */
     pointer-events: auto;
-    margin:  20px;
+    margin: 20px;
     padding: 20px;
     /* overflow: hidden; */
 }
-.movie-wrapper #movies{
+
+.movie-wrapper #movies {
     align-self: center;
     color: #ffffff;
     height: 100%;
 }
 
 
-.movie-wrapper #movies h1::after{
+.movie-wrapper #movies h1::after {
     content: '  Año 2017 | Calificación 4/5';
     font-size: 0.5em;
     display: block
 }
-.movie-wrapper #movies video{
+
+.movie-wrapper #movies video {
     max-width: 100%;
 }
 
 
-.movie-wrapper .movie-content{
+.movie-wrapper .movie-content {
     overflow: hidden;
 }
 
-.movie-content a.movie-desc-button::after{
-    content: ' -'
-}
-.movie-content a.movie-desc-button:focus::after{
-    content: ' +'
-}
 
 
-.movie-content .movie-desc,
-.movie-content .movie-desc-button:focus ~ .movie-desc {
+
+.movie-content input[id='description'] {
+    -webkit-appearance: initial;
+    appearance: initial;
+    /* background: gray; */
+    width: 20px;
+    height: 20px;
+    border: none;
+    position: relative;
+    color: #ffffff;
+    border-radius: 0;
+    top: 7px;
+}
+
+.movie-content input[id='description']:not(:checked)::after {
+    content: "-";
+    color: #ffffff;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+
+}
+
+.movie-content input[id='description']:checked::after {
+    content: "+";
+    color: #ffffff;
+
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.movie-content input[id='description']:not(:checked)~.movie-desc {
     display: block;
     height: 200px;
     overflow: hidden;
     overflow-y: scroll;
     padding: 10px 10px 30px 10px;
 }
-.movie-content .movie-desc-button:focus ~ .movie-desc {
+
+
+.movie-content input[id='description']:checked~.movie-desc {
     display: none;
 }
 
 
-.movie-content .movie-desc .movie-trailer{
+
+.movie-content .movie-desc .movie-trailer {
     display: block;
     max-width: 60%;
 }
@@ -88,16 +127,18 @@
 
 /* Related Content */
 
-.movies-grid{
+.movies-grid {
     background-color: red;
     width: 100%;
     /* min-height: 150px;
     padding-bottom: 50px; */
 }
-.movies-grid h1{
+
+.movies-grid h1 {
     font-size: 1.3rem;
 }
-.movies-grid article{
+
+.movies-grid article {
     height: 100px;
     background-color: aquamarine;
     margin: 2px;
@@ -105,16 +146,18 @@
     min-height: 150px;
 }
 
-.movies-grid article h1{
+.movies-grid article h1 {
     font-size: 0.9rem;
 }
-.movies-grid article img{
+
+.movies-grid article img {
     max-width: 100%;
 }
+
 .movies-grid .movie-wrapper-thumb {
     display: flex;
     /* flex: 1; */
-    background: linear-gradient(to bottom right,#3333335b, #000000);
+    background: linear-gradient(to bottom right, #3333335b, #000000);
     /* box-shadow: 30px 10px 100px #333333; */
     border-radius: 5px;
     flex-direction: row;
@@ -128,18 +171,19 @@
 }
 
 
-.movies-grid .movie-wrapper-thumb .movies-thumb{
+.movies-grid .movie-wrapper-thumb .movies-thumb {
     align-self: center;
     color: #ffffff;
     height: 100%;
 }
 
 
-.movies-grid .movie-wrapper-thumb .movies-thumb h1::after{
+.movies-grid .movie-wrapper-thumb .movies-thumb h1::after {
     content: '  Año 2017 | Calificación 4/5';
     font-size: 0.5em;
     display: block
 }
-.movies-grid .movie-wrapper-thumb .movies-thumb video{
+
+.movies-grid .movie-wrapper-thumb .movies-thumb video {
     max-width: 100%;
 }
