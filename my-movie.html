@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- <script src="https://kit.fontawesome.com/3a8537e9c3.js"></script> -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="css/variables.css">
     <link rel="stylesheet" href="css/animations.css">
 
@@ -18,12 +20,33 @@
 <body>
     <div class="container flex-column">
         <header>
-            <div class="logo flex-1"><a href="#">LOGO</a></div>
-            <nav class="main-nav flex-11">
-                <ul>
+            <div class="logo flex-1-xs flex-2-l flex-2-xl"><a href="#">LOGO</a></div>
+            <form class="search flex-10-xs flex-7-l -flex-7-xl d-flex flex-ai-center flex-jc-center">
+                <input class="d-flex flex-11" type="search" name="search" id="search" placeholder="&#xF002; Search" style="font-family:Arial, FontAwesome" />
+                <!-- <button class="flex-1" type="submit">Search</button> -->
+            </form>
+            <nav class="main-nav flex-1-xs flex-3-l flex-3-xl ">
+                <ul class="d-none-xs">
                     <li><a href="/home.html">Home</a></li>
+                    <li class="contents">
+                        <label for="content">Contenido</label>
+                        <input class="d-none" type="checkbox" name="content" id="content">
+                        <div class="content-list d-none">
+                            <ul class="d-flex flex-column">
+                                <li><a href="#">Novedades</a></li>
+                                <li><a href="#">Películas</a></li>
+                                <li><a href="#">Series</a></li>
+                            </ul>
+                        </div>
+                    </li>
                     <li><a href="/index.html">Logout</a></li>
                 </ul>
+                <ul class="d-flex-xs d-none-l d-none-xl">
+                    <li><i class="fa fa-bars" aria-hidden="true"></i></li>
+                    <!-- <li><a href="/home.html">otro</a></li>
+                    <li><a href="/index.html">Logout</a></li> -->
+                </ul>
+
             </nav>
 
         </header>

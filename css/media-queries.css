@@ -84,7 +84,7 @@
 @media all and (min-width: 1200px) {
 
     .d-none-xl{
-        display: none;
+        display: none !important;
     }
     .d-visible-xl{
         display: block;
@@ -130,7 +130,7 @@
 @media all and (max-width: 1199px) {
 
     .d-none-l{
-        display: none;
+        display: none !important;
     }
     .d-visible-l{
         display: block;
@@ -271,10 +271,14 @@
         min-height: 600px
     }
     .d-none-xs{
-        display: none;
+        display: none !important;
     }
     .d-visible-xs{
-        display: block;
+        display: block !important;
+    }
+
+    .d-flex-xs{
+        display: flex !important;
     }
     .flex-1-xs{
         flex: 1;

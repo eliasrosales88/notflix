@@ -36,7 +36,10 @@ label {
     margin: 1px;
 }
 
-input {
+input[type='email'],
+input[type='password'],
+input[type='text'],
+input[type='search'] {
     margin: 3px;
     border-radius: 5px;
     padding: 5px;
@@ -44,6 +47,7 @@ input {
     box-shadow: inset 0 0 1px black;
     -moz-box-shadow: inset 0 0 1px black;
     -webkit-box-shadow: inset 0 0 1px black;
+    width: 100%;
 }
 
 button {
@@ -81,6 +85,7 @@ header {
 }
 
 .main-nav {
+    color: #ffffff;
     display: inline-flex;
     flex-direction: column;
     align-self: flex-end;
@@ -88,16 +93,45 @@ header {
 
 }
 
-.main-nav ul {
+.main-nav > ul {
     display: flex;
     justify-content: flex-end
 }
 
-.main-nav ul li {
+.main-nav > ul li {
     list-style: none;
     padding: 0 10px;
     display: inline-flex;
 }
+
+.main-nav > ul li.contents{
+    position: relative;
+}
+
+.main-nav > ul li.contents label{
+    cursor: pointer;
+    
+}
+.main-nav > ul li.contents .content-list{
+    position: absolute;
+    bottom:-86px ;
+    background-color: green;
+    
+}
+
+.main-nav > ul li.contents .content-list ul{
+    padding: 2px
+}
+.main-nav > ul li.contents .content-list ul li{
+    list-style: none;
+    padding: 2px;
+    background: red
+}
+.main-nav > ul li.contents input[id='content']:checked ~ .content-list{
+    display: block;
+}
+
+
 
 .tag{
     display: inline-block;
